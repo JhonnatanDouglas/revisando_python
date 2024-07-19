@@ -141,3 +141,18 @@ def subtrair(a, b):
 ```
 
 <!-- ------------------------------------------------------------------------- -->
+
+<!-- Controle de escopo -->
+
+# Se voce criar algo dentro do pacote e nao quer que ele seja executado a nao ser que ele seja chamado, voce deve colocar dentro do pacote o seguinte
+
+```py
+def list_fundamentals():
+    print("Fundamentos e listas")
+
+# aqui voce ta restringindo o print de ser executado
+# assim, somente se voce chamar pelo pacote, ele executará
+if __name__ == "__main__":
+    print("Modulo de list.py")
+
+```
